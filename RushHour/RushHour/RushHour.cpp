@@ -26,7 +26,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	{
 		MessageBox(NULL,
 			_T("Call to RegisterClassEx failed!"),
-			_T("Mega Plane"),
+			_T("Running Doge"),
 			MB_OK);
 
 		return 1;
@@ -58,7 +58,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	{
 		MessageBox(NULL,
 			_T("Call to CreateWindow failed!"),
-			_T("Mega Plane"),
+			_T("Running Doge"),
 			MB_OK);
 
 		return 1;
@@ -365,8 +365,8 @@ BOOL Paused(POINT ptMouse)
 
 	rPause.left = m_gameStatus.pos.x;
 	rPause.top = m_gameStatus.pos.y;
-	rPause.right = m_gameStatus.size.cx;
-	rPause.bottom = m_gameStatus.size.cy;
+	rPause.right = m_gameStatus.pos.x + m_gameStatus.size.cx;
+	rPause.bottom = m_gameStatus.pos.y + m_gameStatus.size.cy;
 
 	return PtInRect(&rPause, ptMouse);
 }

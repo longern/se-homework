@@ -71,7 +71,7 @@ typedef struct
 
 /*全局变量*/
 static TCHAR szWindowClass[] = _T("win32app");
-static TCHAR szTitle[] = _T("尖峰时刻");
+static TCHAR szTitle[] = _T("奔跑吧！Doge!");
 
 /*声明位图句柄*/
 HBITMAP m_hBackgroundBmp;

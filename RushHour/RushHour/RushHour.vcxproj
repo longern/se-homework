@@ -94,13 +94,13 @@
     <Image Include="res\ui\black_roof.bmp" />
     <Image Include="res\ui\blue_block.bmp" />
     <Image Include="res\ui\building.bmp" />
+    <Image Include="res\ui\doge.ico" />
     <Image Include="res\ui\game_status.bmp" />
     <Image Include="res\ui\green_block.bmp" />
     <Image Include="res\ui\grey_roof.bmp" />
     <Image Include="res\ui\hero.bmp" />
     <Image Include="res\ui\orange_block.bmp" />
     <Image Include="res\ui\pink_block.bmp" />
-    <Image Include="res\ui\run.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
