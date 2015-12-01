@@ -8,18 +8,18 @@
 /*定义宏变量，WNDWIDTH、WNDHEIGHT为窗口的宽和高*/
 #define TIMER_ID             1
 #define TIMER_ELAPSE         20
-#define WNDWIDTH             500
-#define WNDHEIGHT            360
+#define WNDWIDTH             720
+#define WNDHEIGHT            430
 #define BLOCK_COLOR_NUM      4
 #define ROOF_COLOR_NUM       2
-#define MAX_TERRIAN_NUM      10
+#define MAX_TERRIAN_NUM      20
 
 //定义资源的尺寸         
-#define HERO_SIZE_X          30
-#define HERO_SIZE_Y          50
+#define HERO_SIZE_X          45
+#define HERO_SIZE_Y          75
 #define HERO_MAX_FRAME_NUM   3
-#define BUILDING_SIZE_X      500
-#define BUILDING_SIZE_Y      250
+#define BUILDING_SIZE_X      900
+#define BUILDING_SIZE_Y      600
 #define ROOF_SIZE_X          65
 #define ROOF_SIZE_Y          33
 #define BLOCK_SIZE_X         65

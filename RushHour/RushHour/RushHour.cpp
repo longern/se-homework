@@ -158,8 +158,8 @@ VOID Init(HWND hWnd, WPARAM wParam, LPARAM lParam)
 	}
 
 	//创建英雄、建筑
-	m_hero = CreateHero(100, 100, HERO_SIZE_X, HERO_SIZE_Y, m_hHeroBmp, 0, HERO_MAX_FRAME_NUM);
-	m_building = CreateBuilding(0, 70, BUILDING_SIZE_X, BUILDING_SIZE_Y, m_hBuildingBmp);
+	m_hero = CreateHero(100, 195, HERO_SIZE_X, HERO_SIZE_Y, m_hHeroBmp, 0, HERO_MAX_FRAME_NUM);
+	m_building = CreateBuilding(0, 100, BUILDING_SIZE_X, BUILDING_SIZE_Y, m_hBuildingBmp);
 	//创建地形
 	for (k = 0; k < MAX_TERRIAN_NUM; ++k)
 	{
@@ -167,7 +167,7 @@ VOID Init(HWND hWnd, WPARAM wParam, LPARAM lParam)
 		{
 			continue;
 		}
-		m_terrian[k] = CreateTerrian(k * 65, 100 + 50 * (k % 2), BLOCK_SIZE_X, 300, m_hBlockBmp[k % 4], m_hRoofkBmp[k % 2], ROOF_SIZE_Y, BLOCK_SIZE_Y);
+		m_terrian[k] = CreateTerrian(k * 65, 220 + 50 * (k % 2), BLOCK_SIZE_X, 300, m_hBlockBmp[k % 4], m_hRoofkBmp[k % 2], ROOF_SIZE_Y, BLOCK_SIZE_Y);
 	}
 
 	//创建游戏状态
