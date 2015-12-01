@@ -14,6 +14,7 @@
     <ProjectGuid>{FDFED666-9505-4762-9334-1C5E1B43F0C6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>RushHour</RootNamespace>
+    <ProjectName>herodog_gray.bmp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -98,7 +99,7 @@
     <Image Include="res\ui\game_status.bmp" />
     <Image Include="res\ui\green_block.bmp" />
     <Image Include="res\ui\grey_roof.bmp" />
-    <Image Include="res\ui\hero.bmp" />
+    <Image Include="res\ui\herodoge_gray.bmp" />
     <Image Include="res\ui\orange_block.bmp" />
     <Image Include="res\ui\pink_block.bmp" />
   </ItemGroup>

@@ -15,9 +15,9 @@
 #define MAX_TERRIAN_NUM      20
 
 //定义资源的尺寸         
-#define HERO_SIZE_X          45
-#define HERO_SIZE_Y          75
-#define HERO_MAX_FRAME_NUM   3
+#define HERO_SIZE_X          65
+#define HERO_SIZE_Y          49
+#define HERO_MAX_FRAME_NUM   9
 #define BUILDING_SIZE_X      900
 #define BUILDING_SIZE_Y      600
 #define ROOF_SIZE_X          65

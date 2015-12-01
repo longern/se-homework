@@ -139,7 +139,7 @@ VOID Init(HWND hWnd, WPARAM wParam, LPARAM lParam)
 		MAKEINTRESOURCE(IDB_BUILDING));
 	//加载Building位图
 	m_hHeroBmp = LoadBitmap(((LPCREATESTRUCT)lParam)->hInstance,
-		MAKEINTRESOURCE(IDB_HERO));
+		MAKEINTRESOURCE(IDB_HERODOGE_GRAY));
 	//加载游戏状态位图
 	m_hGameStatusBmp =  LoadBitmap(((LPCREATESTRUCT)lParam)->hInstance,
 		MAKEINTRESOURCE(IDB_GAME_STATUS));
@@ -158,7 +158,7 @@ VOID Init(HWND hWnd, WPARAM wParam, LPARAM lParam)
 	}
 
 	//创建英雄、建筑
-	m_hero = CreateHero(100, 195, HERO_SIZE_X, HERO_SIZE_Y, m_hHeroBmp, 0, HERO_MAX_FRAME_NUM);
+	m_hero = CreateHero(200, 226, HERO_SIZE_X, HERO_SIZE_Y, m_hHeroBmp, 0, HERO_MAX_FRAME_NUM);
 	m_building = CreateBuilding(0, 100, BUILDING_SIZE_X, BUILDING_SIZE_Y, m_hBuildingBmp);
 	//创建地形
 	for (k = 0; k < MAX_TERRIAN_NUM; ++k)
@@ -324,6 +324,10 @@ VOID TimerUpdate(HWND hWnd, WPARAM wParam, LPARAM lParam)
 {
 	HeroUpdate();
 	TerrianUpdate();
+	TerrianUpdate();
+	TerrianUpdate();
+	GameStatusUpdate();
+	GameStatusUpdate();
 	GameStatusUpdate();
 	InvalidateRect(hWnd, NULL, FALSE);
 }
@@ -332,11 +336,11 @@ VOID HeroUpdate()
 {
 	//TODO
 	//更新位置
-	m_hero.pos.x += 1;
+	//m_hero.pos.x += 1;
 	m_hero.pos.x = m_hero.pos.x >= WNDWIDTH ? 0 : m_hero.pos.x;
 	//更新动作
 	++m_hero.curFrameIndex;
-	m_hero.curFrameIndex = m_hero.curFrameIndex >= m_hero.maxFrameSize ? 0 : m_hero.curFrameIndex;
+	m_hero.curFrameIndex = m_hero.curFrameIndex >= (m_hero.maxFrameSize - 1) ? 0 : m_hero.curFrameIndex;
 }
 
 VOID TerrianUpdate()
